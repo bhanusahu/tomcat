@@ -1,6 +1,10 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+  <%@ page import="java.util.*"%> 
 <html>
 <head>
-<title>Sample Application JSP Page</title>
+
+<title>Sample Application by bhanu Page</title>
 </head>
 <body bgcolor=white>
 
@@ -16,7 +20,9 @@ application.
 </td>
 </tr>
 </table>
-
+<%
+    out.print(System.getenv("APP_VERSION"));
+%>
 <%= new String("Hello!") %>
 
 </body>
