@@ -9,6 +9,6 @@ ENV APP_VERSION $APP_VERSION
 #COPY index.html /usr/local/tomcat/webapps/sample
 COPY index.jsp /usr/local/tomcat/webapps/ROOT/
 RUN echo This image is built by Bhanu : Verion :: $APP_VERSION > /usr/local/tomcat/webapps/ROOT/index.jsp
-RUN bash -c "while true; do echo This image is built by Bhanu : Verion :: $APP_VERSION > /usr/local/tomcat/webapps/ROOT/index.jsp; sleep 15; done"
+#RUN bash -c "while true; do echo This image is built by Bhanu : Verion :: $APP_VERSION > /usr/local/tomcat/webapps/ROOT/index.jsp; sleep 15; done"
 EXPOSE 8080
 CMD ["catalina.sh", "run"]
